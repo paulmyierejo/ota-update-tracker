@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2024-01-15T00:00:00Z",
+  "description": "Known Android security vulnerabilities affecting AOSP and certified devices",
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2024-23706",
+      "published": "2024-01-01",
+      "description": "Remote code execution vulnerability in libavif Media framework",
+      "severity": "critical",
+      "cvss_score": 9.1,
+      "affected_android_versions": ["11", "12", "12L", "13", "14"],
+      "affected_components": ["libavif", "Media framework"],
+      "fixed_security_patches": ["2024-01-01"],
+      "exploited_in_wild": false,
+      "references": [
+        "https://source.android.com/docs/security/bulletin/android-2024-01-01"
+      ]
+    },
+    {
+      "cve_id": "CVE-2024-31320",
+      "published": "2024-04-01",
+      "description": "Privilege escalation in Android System components",
+      "severity": "high",
+      "cvss_score": 8.4,
+      "affected_android_versions": ["12", "12L", "13", "14"],
+      "affected_components": ["Android System"],
+      "fixed_security_patches": ["2024-04-01"],
+      "exploited_in_wild": false,
+      "references": [
+        "https://source.android.com/docs/security/bulletin/android-2024-04-01"
+      ]
+    },
+    {
+      "cve_id": "CVE-2024-24037",
+      "published": "2024-03-01",
+      "description": "Information disclosure in kernel components",
+      "severity": "medium",
+      "cvss_score": 6.5,
+      "affected_android_versions": ["12", "12L", "13", "14"],
+      "affected_components": ["Kernel"],
+      "fixed_security_patches": ["2024-03-01"],
+      "exploited_in_wild": false,
+      "references": []
+    },
+    {
+      "cve_id": "CVE-2023-4863",
+      "published": "2023-09-12",
+      "description": "Heap buffer overflow in libwebp (actively exploited in the wild)",
+      "severity": "critical",
+      "cvss_score": 9.8,
+      "affected_android_versions": ["12", "12L", "13"],
+      "affected_components": ["libwebp", "Media framework"],
+      "fixed_security_patches": ["2023-10-01"],
+      "exploited_in_wild": true,
+      "references": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2023-4863",
+        "https://source.android.com/docs/security/bulletin/android-2023-10-01"
+      ]
+    },
+    {
+      "cve_id": "CVE-2023-4206",
+      "published": "2023-09-01",
+      "description": "Kernel information disclosure vulnerability",
+      "severity": "high",
+      "cvss_score": 7.8,
+      "affected_android_versions": ["12", "12L", "13"],
+      "affected_components": ["Kernel components"],
+      "fixed_security_patches": ["2023-09-01"],
+      "exploited_in_wild": false,
+      "references": []
+    },
+    {
+      "cve_id": "CVE-2023-35674",
+      "published": "2023-07-01",
+      "description": "Escalation of privilege in Framework",
+      "severity": "high",
+      "cvss_score": 7.8,
+      "affected_android_versions": ["11", "12", "12L", "13"],
+      "affected_components": ["Framework"],
+      "fixed_security_patches": ["2023-07-01"],
+      "exploited_in_wild": false,
+      "references": []
+    },
+    {
+      "cve_id": "CVE-2023-21106",
+      "published": "2023-04-01",
+      "description": "Local privilege escalation in Media processing",
+      "severity": "high",
+      "cvss_score": 8.4,
+      "affected_android_versions": ["11", "12", "12L", "13"],
+      "affected_components": ["Media framework"],
+      "fixed_security_patches": ["2023-04-01"],
+      "exploited_in_wild": false,
+      "references": []
+    },
+    {
+      "cve_id": "CVE-2022-20419",
+      "published": "2022-10-01",
+      "description": "Elevation of privilege in Settings app",
+      "severity": "high",
+      "cvss_score": 7.8,
+      "affected_android_versions": ["11", "12", "12L"],
+      "affected_components": ["Settings"],
+      "fixed_security_patches": ["2022-10-01"],
+      "exploited_in_wild": false,
+      "references": []
+    },
+    {
+      "cve_id": "CVE-2022-20145",
+      "published": "2022-07-01",
+      "description": "Remote code execution in Bluetooth component",
+      "severity": "critical",
+      "cvss_score": 9.8,
+      "affected_android_versions": ["10", "11", "12"],
+      "affected_components": ["Bluetooth"],
+      "fixed_security_patches": ["2022-07-01"],
+      "exploited_in_wild": true,
+      "references": []
+    },
+    {
+      "cve_id": "CVE-2021-0928",
+      "published": "2021-12-01",
+      "description": "Escalation of privilege in Unix socket handling",
+      "severity": "high",
+      "cvss_score": 8.4,
+      "affected_android_versions": ["10", "11", "12"],
+      "affected_components": ["Kernel", "System"],
+      "fixed_security_patches": ["2021-12-01"],
+      "exploited_in_wild": false,
+      "references": []
+    }
+  ],
+  "metadata": {
+    "data_sources": [
+      "Google Android Security Bulletin",
+      "NVD CVE Database",
+      "Google Project Zero"
+    ],
+    "update_frequency": "monthly",
+    "next_expected_update": "2024-02-01"
+  }
+}
